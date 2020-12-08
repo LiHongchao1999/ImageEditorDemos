@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImageEditorDemos</string>
+    <string name="save_path" translatable="false">保存到路径: %s</string>
+</resources>
