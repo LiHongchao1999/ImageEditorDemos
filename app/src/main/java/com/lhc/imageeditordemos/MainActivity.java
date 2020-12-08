@@ -206,8 +206,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (isImageEdit){
             Toast.makeText(this, getString(R.string.save_path, newFilePath), Toast.LENGTH_LONG).show();
+            Log.e("保存的路径newFilePath",newFilePath);
         }else{//未编辑  还是用原来的图片
-            newFilePath = data.getStringExtra(EditImageActivity.FILE_PATH);;
+            newFilePath = data.getStringExtra(EditImageActivity.FILE_PATH);
+            Log.e("未编辑还是用原来的图片path",newFilePath);
         }
         //System.out.println("newFilePath---->" + newFilePath);
         //File file = new File(newFilePath);
